@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/felixlapierre1/team-soen-tryout#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "socket.io": "^2.1.1"
   }
 }
