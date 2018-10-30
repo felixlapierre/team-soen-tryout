@@ -36,5 +36,19 @@ io.on('connection', function(socket) {
     socket.on('login', function(data) {
         var username = data.username;
         var passwordHashed = data.password;
+
+        //Check with database if this is a proper login
+        //If it is, redirect to account page
+        var validLogin = false;
+        if(validLogin) {
+            clients[socket.id].username = data.username;
+            io.in(socket.id).emit('goto', '/static/account.html');
+        } else {
+
+        }
+    });
+
+    socket.on('account', function() {
+        //Get balance from db and emit to that client
     });
 });
