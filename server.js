@@ -2,10 +2,12 @@
 var express = require('express');
 var http = require('http');
 var path = require('path');
+var socketIO = require('socket.io');
 
 //Create server
 var app = express();
 var server = http.Server(app);
+var io = socketIO(server);
 
 //Network configuration
 app.set('port', 5000);

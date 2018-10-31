@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset = "UTF-8">
         <title>Team soen tryout</title>
-        <script src = "/socket.io/socket.io.js"></script>
+        <script type="text/javascript" src = "/socket.io/socket.io.js"></script>
+        <script type="text/javascript" src = "/static/login.js"></script>
     </head>
-    <body>
-        <form>
+    <body> 
+        
             <input type="text" id= "userName" />
             <input type="password" id= "password" />
-            <input type="button" value= "Log In" id= "login" onclick="login()"/>
-            <input type="button" value= "See a Cute Fox" id= "Create Account" onclick="gotoFox()" />
-
-        </form>
+            <button  id= "login" onclick= 'login()'> Log in</button>
+        
+        <p id= "message"></p>
     </body>
-    <script src = "/login.js"></script>
+   
 </html>
-
