@@ -9,3 +9,8 @@ function login(){
         password : document.getElementById("password").value
     } );
 }
+
+socket.on("link", function(url){
+    console.log(url);
+    window.location.replace(url);
+});

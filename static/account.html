@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <title>Account details</title>
+        <script type="text/javascript" src = "/socket.io/socket.io.js"></script>
+        <script type="text/javascript" src = "/static/transaction.js"></script>
+    </head>
+    <body> 
+        <div>
+            <table>
+                <tr>
+                    <td>Current account balance</td>
+                    <td id= "balance"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id= "transactionAmt" value= "Please enter a sum"/></td>
+                    <td><button  id= "deposit" onclick= 'deposit()'> Deposit</button>
+                        <button  id= "withdraw" onclick= 'withdraw()'> Withdraw</button></td>    
+                        
+                </tr>
+                <th>     NEW! Photo cheque deposit</th>
+                <tr>
+                        <td>
+                            <input type="file" name="pic" accept="image/*">                           
+                        <td> <button  id= "upload" onclick= 'uploadImage()'> Submit</button></td>    
+                            
+                </tr>
+
+            </table>
+
+        </div>
+    </body>
+   
+</html>
