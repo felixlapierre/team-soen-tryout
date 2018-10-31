@@ -1,21 +1,18 @@
-<!DOCTYPE hmtl>
+<!DOCTYPE html>
 <html>
     <head>
         <title>Team soen tryout</title>
+        <script src = "/socket.io/socket.io.js"></script>
     </head>
     <body>
         <form>
             <input type="text" id= "userName" />
             <input type="password" id= "password" />
-            <input type="button" value= "Log In" id= "login" />
+            <input type="button" value= "Log In" id= "login" onclick="login()"/>
             <input type="button" value= "See a Cute Fox" id= "Create Account" onclick="gotoFox()" />
 
         </form>
-        <script> 
-        function gotoFox(){
-            //redirect to cute fox picture
-        }
-        </script>
     </body>
+    <script src = "/login.js"></script>
 </html>
 
