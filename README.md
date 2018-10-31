@@ -1,8 +1,10 @@
 Howdy cowboy!
-this is a garbage dump on fire. it is supposed to be a bank statement web app. using mongodb and nodejs backend server.
-it miserably failed. blockers when connecting the mongo database to the node js server. idk why.
+To run our code, checkout the Jun branch and run the following commands in the project folder:
 
-to run whatever we have, run node server.js (frontend). and run npm run dev (backend) in a separate terminal. maybe something
-works. woop woop! 
+npm install
+node server.js
 
-i think the problem relies in the mongodb installation and the fact that school computers don't have admin privileges.
+This will start the server on port 5000.
+
+You can connect by entering localhost:5000 in the address bar of a web browser.
+Only one user exists on the server. The username is Felix and the password is password. We couldn't get the database to work so that's all we got!
