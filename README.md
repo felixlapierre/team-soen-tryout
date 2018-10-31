@@ -2,6 +2,7 @@ Howdy cowboy!
 To run our code, checkout the Jun branch and run the following commands in the project folder:
 
 npm install
+
 node server.js
 
 This will start the server on port 5000.
